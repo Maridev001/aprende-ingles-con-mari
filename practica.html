@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios - Mari La Gringa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html" style="text-decoration:none;color:inherit;">Mari La Gringa</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#clases">Clases</a></li>
+            <li><a href="index.html#apoyame">Apóyame</a></li>
+            <li><a href="index.html#videos">Videos</a></li>
+            <li><a href="index.html#comunidad">Comunidad</a></li>
+            <li><a href="practica.html" class="active-link">Ejercicios</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Menú">&#9776;</button>
+    </nav>
+
+    <section class="practica-hero" id="practica-top">
+        <h1>Ejercicios de Inglés</h1>
+        <p class="practica-hero-desc">Ejercicios interactivos de nivel A1 organizados por tema. Selecciona un tema del menú lateral o empieza desde el principio.</p>
+        <a href="#verb-to-be" class="btn btn-start" id="btn-start">Let's start!</a>
+    </section>
+
+    <div class="practica-layout">
+
+        <aside class="sidebar" id="sidebar">
+            <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Menú de ejercicios">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <span>Ejercicios</span>
+            </button>
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <h3>Gramática A1</h3>
+                <ul>
+                    <li><a href="#verb-to-be" class="sidebar-link active" data-topic="verb-to-be">Verb To Be</a></li>
+                    <li><a href="#present-simple" class="sidebar-link" data-topic="present-simple">Present Simple</a></li>
+                    <li><a href="#past-simple" class="sidebar-link" data-topic="past-simple">Past Simple</a></li>
+                    <li><a href="#future-simple" class="sidebar-link" data-topic="future-simple">Future Simple</a></li>
+                    <li><a href="#articles" class="sidebar-link" data-topic="articles">Articles (a, an, the)</a></li>
+                    <li><a href="#pronouns" class="sidebar-link" data-topic="pronouns">Pronouns</a></li>
+                    <li><a href="#possessives" class="sidebar-link" data-topic="possessives">Possessive Pronouns</a></li>
+                    <li><a href="#prepositions" class="sidebar-link" data-topic="prepositions">Prepositions of Place</a></li>
+                </ul>
+                <h3>Situaciones Reales</h3>
+                <ul>
+                    <li><a href="#directions" class="sidebar-link" data-topic="directions">Directions</a></li>
+                    <li><a href="#restaurant" class="sidebar-link" data-topic="restaurant">At the Restaurant</a></li>
+                    <li><a href="#airport" class="sidebar-link" data-topic="airport">At the Airport</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="practica-content">
+
+            <!-- ==================== VERB TO BE ==================== -->
+            <section class="quiz-topic" id="verb-to-be" data-topic="verb-to-be">
+                <div class="topic-header">
+                    <h2>Verb To Be</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc">El verbo "to be" (ser/estar) es el verbo más importante en inglés. Practica sus formas: <strong>am, is, are</strong>.</p>
+
+                <div class="topic-image-box">
+                    <table class="grammar-table">
+                        <tr><th>Sujeto</th><th>Verbo</th><th>Ejemplo</th></tr>
+                        <tr><td>I</td><td>am</td><td>I am happy</td></tr>
+                        <tr><td>He / She / It</td><td>is</td><td>She is a teacher</td></tr>
+                        <tr><td>You / We / They</td><td>are</td><td>They are friends</td></tr>
+                    </table>
+                </div>
+
+                <div class="quiz-question" data-correct="b">
+                    <p>1. She ___ a teacher.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) am</button>
+                        <button class="quiz-option" data-value="b">B) is</button>
+                        <button class="quiz-option" data-value="c">C) are</button>
+                        <button class="quiz-option" data-value="d">D) be</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>2. I ___ from Venezuela.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) am</button>
+                        <button class="quiz-option" data-value="b">B) is</button>
+                        <button class="quiz-option" data-value="c">C) are</button>
+                        <button class="quiz-option" data-value="d">D) be</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>3. They ___ happy today.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) am</button>
+                        <button class="quiz-option" data-value="b">B) is</button>
+                        <button class="quiz-option" data-value="c">C) are</button>
+                        <button class="quiz-option" data-value="d">D) was</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>4. "She is not tired" en forma corta es:</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) She amn't tired</button>
+                        <button class="quiz-option" data-value="b">B) She aren't tired</button>
+                        <button class="quiz-option" data-value="c">C) She not tired</button>
+                        <button class="quiz-option" data-value="d">D) She isn't tired</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>5. ___ you a student?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) Am</button>
+                        <button class="quiz-option" data-value="b">B) Are</button>
+                        <button class="quiz-option" data-value="c">C) Is</button>
+                        <button class="quiz-option" data-value="d">D) Be</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== PRESENT SIMPLE ==================== -->
+            <section class="quiz-topic" id="present-simple" data-topic="present-simple">
+                <div class="topic-header">
+                    <h2>Present Simple</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc">Se usa para rutinas y hábitos. Recuerda: en tercera persona (he/she/it) el verbo lleva <strong>-s</strong> o <strong>-es</strong>.</p>
+
+                <div class="topic-image-box">
+                    <table class="grammar-table">
+                        <tr><th>Afirmativo</th><th>Negativo</th><th>Pregunta</th></tr>
+                        <tr><td>I play</td><td>I don't play</td><td>Do I play?</td></tr>
+                        <tr><td>She plays</td><td>She doesn't play</td><td>Does she play?</td></tr>
+                    </table>
+                </div>
+
+                <div class="quiz-question" data-correct="c">
+                    <p>1. She ___ to school every day.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) go</button>
+                        <button class="quiz-option" data-value="b">B) going</button>
+                        <button class="quiz-option" data-value="c">C) goes</button>
+                        <button class="quiz-option" data-value="d">D) gone</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>2. I ___ coffee every morning.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) drink</button>
+                        <button class="quiz-option" data-value="b">B) drinks</button>
+                        <button class="quiz-option" data-value="c">C) drinking</button>
+                        <button class="quiz-option" data-value="d">D) drank</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>3. He ___ not like vegetables.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) do</button>
+                        <button class="quiz-option" data-value="b">B) does</button>
+                        <button class="quiz-option" data-value="c">C) don't</button>
+                        <button class="quiz-option" data-value="d">D) is</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>4. ___ they speak English?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) Does</button>
+                        <button class="quiz-option" data-value="b">B) Is</button>
+                        <button class="quiz-option" data-value="c">C) Are</button>
+                        <button class="quiz-option" data-value="d">D) Do</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>5. My cat ___ on the sofa all day.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) sleep</button>
+                        <button class="quiz-option" data-value="b">B) sleeping</button>
+                        <button class="quiz-option" data-value="c">C) sleeps</button>
+                        <button class="quiz-option" data-value="d">D) slept</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== PAST SIMPLE ==================== -->
+            <section class="quiz-topic" id="past-simple" data-topic="past-simple">
+                <div class="topic-header">
+                    <h2>Past Simple</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc">Para acciones que ya terminaron. Verbos regulares: <strong>+ed</strong>. Verbos irregulares: cambian de forma (go &rarr; went).</p>
+
+                <div class="topic-image-box">
+                    <table class="grammar-table">
+                        <tr><th>Regular</th><th>Irregular</th></tr>
+                        <tr><td>work &rarr; worked</td><td>go &rarr; went</td></tr>
+                        <tr><td>play &rarr; played</td><td>eat &rarr; ate</td></tr>
+                        <tr><td>watch &rarr; watched</td><td>see &rarr; saw</td></tr>
+                    </table>
+                </div>
+
+                <div class="quiz-question" data-correct="b">
+                    <p>1. I ___ to the supermarket yesterday.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) go</button>
+                        <button class="quiz-option" data-value="b">B) went</button>
+                        <button class="quiz-option" data-value="c">C) gone</button>
+                        <button class="quiz-option" data-value="d">D) going</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>2. She ___ a delicious cake last weekend.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) made</button>
+                        <button class="quiz-option" data-value="b">B) maked</button>
+                        <button class="quiz-option" data-value="c">C) makes</button>
+                        <button class="quiz-option" data-value="d">D) making</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>3. They ___ TV last night.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) watch</button>
+                        <button class="quiz-option" data-value="b">B) watches</button>
+                        <button class="quiz-option" data-value="c">C) watched</button>
+                        <button class="quiz-option" data-value="d">D) watching</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>4. He ___ not come to the party.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) do</button>
+                        <button class="quiz-option" data-value="b">B) does</button>
+                        <button class="quiz-option" data-value="c">C) doesn't</button>
+                        <button class="quiz-option" data-value="d">D) did</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>5. ___ you eat breakfast this morning?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) Do</button>
+                        <button class="quiz-option" data-value="b">B) Did</button>
+                        <button class="quiz-option" data-value="c">C) Does</button>
+                        <button class="quiz-option" data-value="d">D) Are</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== FUTURE SIMPLE ==================== -->
+            <section class="quiz-topic" id="future-simple" data-topic="future-simple">
+                <div class="topic-header">
+                    <h2>Future Simple</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc"><strong>Will</strong> para decisiones espontáneas y predicciones. <strong>Going to</strong> para planes ya decididos.</p>
+
+                <div class="topic-image-box">
+                    <table class="grammar-table">
+                        <tr><th>Will</th><th>Going to</th></tr>
+                        <tr><td>I will help you</td><td>I am going to study</td></tr>
+                        <tr><td>It will rain tomorrow</td><td>She is going to travel</td></tr>
+                        <tr><td>He won't come</td><td>They aren't going to play</td></tr>
+                    </table>
+                </div>
+
+                <div class="quiz-question" data-correct="a">
+                    <p>1. I ___ travel to Spain next year.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) will</button>
+                        <button class="quiz-option" data-value="b">B) am</button>
+                        <button class="quiz-option" data-value="c">C) was</button>
+                        <button class="quiz-option" data-value="d">D) did</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>2. She ___ going to study English tonight.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) will</button>
+                        <button class="quiz-option" data-value="b">B) are</button>
+                        <button class="quiz-option" data-value="c">C) is</button>
+                        <button class="quiz-option" data-value="d">D) were</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>3. They ___ not come to class tomorrow.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) are</button>
+                        <button class="quiz-option" data-value="b">B) will</button>
+                        <button class="quiz-option" data-value="c">C) do</button>
+                        <button class="quiz-option" data-value="d">D) did</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>4. ___ you help me with this exercise?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) Do</button>
+                        <button class="quiz-option" data-value="b">B) Are</button>
+                        <button class="quiz-option" data-value="c">C) Did</button>
+                        <button class="quiz-option" data-value="d">D) Will</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>5. We are ___ to have a party this Saturday.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) going</button>
+                        <button class="quiz-option" data-value="b">B) will</button>
+                        <button class="quiz-option" data-value="c">C) went</button>
+                        <button class="quiz-option" data-value="d">D) go</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== ARTICLES ==================== -->
+            <section class="quiz-topic" id="articles" data-topic="articles">
+                <div class="topic-header">
+                    <h2>Articles (a, an, the)</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc"><strong>A/An</strong> = no específico. <strong>The</strong> = específico. <strong>An</strong> antes de sonido de vocal. Sin artículo para cosas en general.</p>
+
+                <div class="topic-image-box">
+                    <table class="grammar-table">
+                        <tr><th>Artículo</th><th>Uso</th><th>Ejemplo</th></tr>
+                        <tr><td>a</td><td>Antes de consonante</td><td>a book, a car</td></tr>
+                        <tr><td>an</td><td>Antes de vocal</td><td>an apple, an hour</td></tr>
+                        <tr><td>the</td><td>Algo específico</td><td>the sun, the book on the table</td></tr>
+                        <tr><td>--</td><td>General / abstracto</td><td>I like music</td></tr>
+                    </table>
+                </div>
+
+                <div class="quiz-question" data-correct="b">
+                    <p>1. She is ___ doctor.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) an</button>
+                        <button class="quiz-option" data-value="b">B) a</button>
+                        <button class="quiz-option" data-value="c">C) the</button>
+                        <button class="quiz-option" data-value="d">D) --</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>2. I want ___ apple.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) an</button>
+                        <button class="quiz-option" data-value="b">B) a</button>
+                        <button class="quiz-option" data-value="c">C) the</button>
+                        <button class="quiz-option" data-value="d">D) --</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>3. ___ sun is very bright today.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) A</button>
+                        <button class="quiz-option" data-value="b">B) An</button>
+                        <button class="quiz-option" data-value="c">C) The</button>
+                        <button class="quiz-option" data-value="d">D) --</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>4. He is ___ honest person.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) an</button>
+                        <button class="quiz-option" data-value="b">B) a</button>
+                        <button class="quiz-option" data-value="c">C) the</button>
+                        <button class="quiz-option" data-value="d">D) --</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>5. I like ___ music.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) a</button>
+                        <button class="quiz-option" data-value="b">B) an</button>
+                        <button class="quiz-option" data-value="c">C) the</button>
+                        <button class="quiz-option" data-value="d">D) -- (sin artículo)</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== PRONOUNS ==================== -->
+            <section class="quiz-topic" id="pronouns" data-topic="pronouns">
+                <div class="topic-header">
+                    <h2>Pronouns</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc">Los pronombres personales reemplazan al sustantivo. Hay de <strong>sujeto</strong> y de <strong>objeto</strong>.</p>
+
+                <div class="topic-image-box">
+                    <table class="grammar-table">
+                        <tr><th>Sujeto</th><th>Objeto</th><th>Ejemplo</th></tr>
+                        <tr><td>I</td><td>me</td><td>She called me</td></tr>
+                        <tr><td>you</td><td>you</td><td>I see you</td></tr>
+                        <tr><td>he</td><td>him</td><td>I gave him a book</td></tr>
+                        <tr><td>she</td><td>her</td><td>Talk to her</td></tr>
+                        <tr><td>we</td><td>us</td><td>Come with us</td></tr>
+                        <tr><td>they</td><td>them</td><td>I know them</td></tr>
+                    </table>
+                </div>
+
+                <div class="quiz-question" data-correct="c">
+                    <p>1. Maria is my friend. ___ is very kind.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) He</button>
+                        <button class="quiz-option" data-value="b">B) It</button>
+                        <button class="quiz-option" data-value="c">C) She</button>
+                        <button class="quiz-option" data-value="d">D) They</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>2. I gave the book to ___.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) he</button>
+                        <button class="quiz-option" data-value="b">B) him</button>
+                        <button class="quiz-option" data-value="c">C) his</button>
+                        <button class="quiz-option" data-value="d">D) he's</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>3. ___ are going to the park.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) We</button>
+                        <button class="quiz-option" data-value="b">B) Us</button>
+                        <button class="quiz-option" data-value="c">C) Our</button>
+                        <button class="quiz-option" data-value="d">D) Ours</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>4. Can you help ___? (a nosotros)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) we</button>
+                        <button class="quiz-option" data-value="b">B) our</button>
+                        <button class="quiz-option" data-value="c">C) ours</button>
+                        <button class="quiz-option" data-value="d">D) us</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>5. I don't know ___. (a ellos)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) they</button>
+                        <button class="quiz-option" data-value="b">B) their</button>
+                        <button class="quiz-option" data-value="c">C) them</button>
+                        <button class="quiz-option" data-value="d">D) theirs</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== POSSESSIVE PRONOUNS ==================== -->
+            <section class="quiz-topic" id="possessives" data-topic="possessives">
+                <div class="topic-header">
+                    <h2>Possessive Pronouns</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc">Los posesivos indican a quién pertenece algo. Hay <strong>adjetivos posesivos</strong> (van antes del sustantivo) y <strong>pronombres posesivos</strong> (reemplazan al sustantivo).</p>
+
+                <div class="topic-image-box">
+                    <table class="grammar-table">
+                        <tr><th>Sujeto</th><th>Adj. Posesivo</th><th>Pron. Posesivo</th></tr>
+                        <tr><td>I</td><td>my</td><td>mine</td></tr>
+                        <tr><td>you</td><td>your</td><td>yours</td></tr>
+                        <tr><td>he</td><td>his</td><td>his</td></tr>
+                        <tr><td>she</td><td>her</td><td>hers</td></tr>
+                        <tr><td>it</td><td>its</td><td>--</td></tr>
+                        <tr><td>we</td><td>our</td><td>ours</td></tr>
+                        <tr><td>they</td><td>their</td><td>theirs</td></tr>
+                    </table>
+                </div>
+
+                <div class="quiz-question" data-correct="b">
+                    <p>1. This is ___ book. (de ella)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) she</button>
+                        <button class="quiz-option" data-value="b">B) her</button>
+                        <button class="quiz-option" data-value="c">C) hers</button>
+                        <button class="quiz-option" data-value="d">D) his</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>2. That car is ___. (de nosotros)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) our</button>
+                        <button class="quiz-option" data-value="b">B) we</button>
+                        <button class="quiz-option" data-value="c">C) us</button>
+                        <button class="quiz-option" data-value="d">D) ours</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>3. Is this ___ phone? (de ti)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) your</button>
+                        <button class="quiz-option" data-value="b">B) yours</button>
+                        <button class="quiz-option" data-value="c">C) you</button>
+                        <button class="quiz-option" data-value="d">D) you're</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>4. The dog lost ___ toy.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) it</button>
+                        <button class="quiz-option" data-value="b">B) it's</button>
+                        <button class="quiz-option" data-value="c">C) its</button>
+                        <button class="quiz-option" data-value="d">D) his</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>5. This pen is not mine, it's ___. (de él)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) him</button>
+                        <button class="quiz-option" data-value="b">B) his</button>
+                        <button class="quiz-option" data-value="c">C) he</button>
+                        <button class="quiz-option" data-value="d">D) her</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== PREPOSITIONS OF PLACE ==================== -->
+            <section class="quiz-topic" id="prepositions" data-topic="prepositions">
+                <div class="topic-header">
+                    <h2>Prepositions of Place</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc">Las preposiciones de lugar indican dónde está algo: <strong>in</strong> (dentro), <strong>on</strong> (sobre), <strong>under</strong> (debajo), <strong>next to</strong> (al lado), <strong>between</strong> (entre), <strong>behind</strong> (detrás), <strong>in front of</strong> (enfrente).</p>
+
+                <div class="topic-image-box">
+                    <!-- Espacio para imagen didáctica -->
+                    <div class="image-placeholder">
+                        <img src="img/prepositions.png" alt="Prepositions of place - in, on, under, next to, between, behind, in front of" onerror="this.parentElement.innerHTML='<div class=&#34;placeholder-text&#34;><strong>in</strong> = dentro &nbsp; <strong>on</strong> = sobre &nbsp; <strong>under</strong> = debajo<br><strong>next to</strong> = al lado &nbsp; <strong>between</strong> = entre<br><strong>behind</strong> = detrás &nbsp; <strong>in front of</strong> = enfrente</div>'">
+                    </div>
+                </div>
+
+                <div class="quiz-question" data-correct="a">
+                    <p>1. The cat is ___ the box. (dentro)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) in</button>
+                        <button class="quiz-option" data-value="b">B) on</button>
+                        <button class="quiz-option" data-value="c">C) at</button>
+                        <button class="quiz-option" data-value="d">D) under</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>2. The book is ___ the table. (sobre)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) in</button>
+                        <button class="quiz-option" data-value="b">B) under</button>
+                        <button class="quiz-option" data-value="c">C) on</button>
+                        <button class="quiz-option" data-value="d">D) behind</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>3. The shoes are ___ the bed. (debajo)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) on</button>
+                        <button class="quiz-option" data-value="b">B) under</button>
+                        <button class="quiz-option" data-value="c">C) in</button>
+                        <button class="quiz-option" data-value="d">D) next to</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>4. The pharmacy is ___ the bank and the school.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) in front of</button>
+                        <button class="quiz-option" data-value="b">B) behind</button>
+                        <button class="quiz-option" data-value="c">C) next to</button>
+                        <button class="quiz-option" data-value="d">D) between</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>5. The park is ___ the hospital. (enfrente)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) in front of</button>
+                        <button class="quiz-option" data-value="b">B) behind</button>
+                        <button class="quiz-option" data-value="c">C) between</button>
+                        <button class="quiz-option" data-value="d">D) under</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== DIRECTIONS ==================== -->
+            <section class="quiz-topic" id="directions" data-topic="directions">
+                <div class="topic-header">
+                    <h2>Giving Directions</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc">Aprende a pedir y dar direcciones en inglés. Vocabulario clave: <strong>turn left/right</strong>, <strong>go straight</strong>, <strong>go past</strong>, <strong>it's on the corner</strong>.</p>
+
+                <div class="topic-image-box">
+                    <div class="vocab-grid">
+                        <div class="vocab-card">
+                            <span class="vocab-en">Turn left</span>
+                            <span class="vocab-es">Gira a la izquierda</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Turn right</span>
+                            <span class="vocab-es">Gira a la derecha</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Go straight</span>
+                            <span class="vocab-es">Sigue derecho</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Go past</span>
+                            <span class="vocab-es">Pasa por / Pasa de largo</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">On the corner</span>
+                            <span class="vocab-es">En la esquina</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Across from</span>
+                            <span class="vocab-es">Enfrente de</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-question" data-correct="b">
+                    <p>1. Excuse me, how do I ___ to the train station?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) go</button>
+                        <button class="quiz-option" data-value="b">B) get</button>
+                        <button class="quiz-option" data-value="c">C) arrive</button>
+                        <button class="quiz-option" data-value="d">D) come</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>2. ___ straight ahead and then turn left.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) Walk to</button>
+                        <button class="quiz-option" data-value="b">B) Come</button>
+                        <button class="quiz-option" data-value="c">C) Go</button>
+                        <button class="quiz-option" data-value="d">D) Get</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>3. The supermarket is ___ the corner of Main Street.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) on</button>
+                        <button class="quiz-option" data-value="b">B) in</button>
+                        <button class="quiz-option" data-value="c">C) at</button>
+                        <button class="quiz-option" data-value="d">D) by</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>4. Go ___ the church and the bank is on your right.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) across</button>
+                        <button class="quiz-option" data-value="b">B) between</button>
+                        <button class="quiz-option" data-value="c">C) through</button>
+                        <button class="quiz-option" data-value="d">D) past</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>5. The café is ___ the bookstore. (al otro lado de la calle)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) next to</button>
+                        <button class="quiz-option" data-value="b">B) across from</button>
+                        <button class="quiz-option" data-value="c">C) behind</button>
+                        <button class="quiz-option" data-value="d">D) between</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== AT THE RESTAURANT ==================== -->
+            <section class="quiz-topic" id="restaurant" data-topic="restaurant">
+                <div class="topic-header">
+                    <h2>At the Restaurant</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc">Aprende las frases más útiles para ordenar comida, pedir la cuenta y comunicarte en un restaurante en inglés.</p>
+
+                <div class="topic-image-box">
+                    <div class="dialogue-box">
+                        <p class="dialogue-title">Diálogo típico:</p>
+                        <p><strong>Waiter:</strong> Are you ready to order?</p>
+                        <p><strong>You:</strong> Yes, I'd like the chicken salad, please.</p>
+                        <p><strong>Waiter:</strong> Anything to drink?</p>
+                        <p><strong>You:</strong> Can I have a glass of water, please?</p>
+                        <p><strong>Waiter:</strong> Sure. Anything else?</p>
+                        <p><strong>You:</strong> No, that's all. Thank you.</p>
+                        <p><strong>You:</strong> Could I have the bill, please?</p>
+                    </div>
+                </div>
+
+                <div class="quiz-question" data-correct="c">
+                    <p>1. "I'd like" es la forma corta de:</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) I do like</button>
+                        <button class="quiz-option" data-value="b">B) I had like</button>
+                        <button class="quiz-option" data-value="c">C) I would like</button>
+                        <button class="quiz-option" data-value="d">D) I did like</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>2. ___ I have a glass of water, please?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) Can</button>
+                        <button class="quiz-option" data-value="b">B) Do</button>
+                        <button class="quiz-option" data-value="c">C) Am</button>
+                        <button class="quiz-option" data-value="d">D) Have</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>3. ¿Cómo pides la cuenta en inglés?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) Can I have the menu?</button>
+                        <button class="quiz-option" data-value="b">B) Could I have the bill, please?</button>
+                        <button class="quiz-option" data-value="c">C) I want to pay money</button>
+                        <button class="quiz-option" data-value="d">D) Give me the paper</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>4. Waiter: "Are you ready to ___?"</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) eat</button>
+                        <button class="quiz-option" data-value="b">B) ask</button>
+                        <button class="quiz-option" data-value="c">C) want</button>
+                        <button class="quiz-option" data-value="d">D) order</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>5. "Anything else?" significa:</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) ¿Todo bien?</button>
+                        <button class="quiz-option" data-value="b">B) ¿Quiere pagar?</button>
+                        <button class="quiz-option" data-value="c">C) ¿Algo más?</button>
+                        <button class="quiz-option" data-value="d">D) ¿Le gustó?</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+            <!-- ==================== AT THE AIRPORT ==================== -->
+            <section class="quiz-topic" id="airport" data-topic="airport">
+                <div class="topic-header">
+                    <h2>At the Airport</h2>
+                    <span class="topic-badge">A1</span>
+                </div>
+                <p class="topic-desc">Vocabulario y frases esenciales para viajar. Aprende a hacer check-in, pasar por seguridad y encontrar tu puerta de embarque.</p>
+
+                <div class="topic-image-box">
+                    <div class="vocab-grid">
+                        <div class="vocab-card">
+                            <span class="vocab-en">Boarding pass</span>
+                            <span class="vocab-es">Tarjeta de embarque</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Gate</span>
+                            <span class="vocab-es">Puerta de embarque</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Luggage / Baggage</span>
+                            <span class="vocab-es">Equipaje</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Carry-on</span>
+                            <span class="vocab-es">Equipaje de mano</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Departure</span>
+                            <span class="vocab-es">Salida</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Arrival</span>
+                            <span class="vocab-es">Llegada</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Delayed</span>
+                            <span class="vocab-es">Retrasado</span>
+                        </div>
+                        <div class="vocab-card">
+                            <span class="vocab-en">Window / Aisle seat</span>
+                            <span class="vocab-es">Ventana / Pasillo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-question" data-correct="b">
+                    <p>1. "Where is ___ gate B12?"</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) a</button>
+                        <button class="quiz-option" data-value="b">B) --  (sin artículo)</button>
+                        <button class="quiz-option" data-value="c">C) an</button>
+                        <button class="quiz-option" data-value="d">D) the</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="a">
+                    <p>2. "I'd like a ___ seat, please." (ventana)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) window</button>
+                        <button class="quiz-option" data-value="b">B) aisle</button>
+                        <button class="quiz-option" data-value="c">C) middle</button>
+                        <button class="quiz-option" data-value="d">D) front</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="c">
+                    <p>3. "Can I see your ___ and boarding pass?"</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) ticket</button>
+                        <button class="quiz-option" data-value="b">B) ID card</button>
+                        <button class="quiz-option" data-value="c">C) passport</button>
+                        <button class="quiz-option" data-value="d">D) luggage</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="d">
+                    <p>4. The flight is ___. It will leave 2 hours late. (retrasado)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) cancelled</button>
+                        <button class="quiz-option" data-value="b">B) boarding</button>
+                        <button class="quiz-option" data-value="c">C) arriving</button>
+                        <button class="quiz-option" data-value="d">D) delayed</button>
+                    </div>
+                </div>
+                <div class="quiz-question" data-correct="b">
+                    <p>5. "How many bags are you ___?" (facturando)</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="a">A) bringing</button>
+                        <button class="quiz-option" data-value="b">B) checking in</button>
+                        <button class="quiz-option" data-value="c">C) carrying on</button>
+                        <button class="quiz-option" data-value="d">D) packing</button>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display:none;">
+                    <h2>Resultado</h2>
+                    <div class="score">0/5</div>
+                    <p class="score-message"></p>
+                    <button class="btn-restart">Intentar de nuevo</button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://instagram.com/mari.lagringa" target="_blank" aria-label="Instagram">
+                <img src="sources/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://tiktok.com/@mari.lagringa" target="_blank" aria-label="TikTok">
+                <img src="sources/tik-tok.png" alt="TikTok" class="social-icon">
+            </a>
+        </div>
+        <p>&copy; 2026 Marianna Alvarez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="practica.js"></script>
+</body>
+</html>
